@@ -21,7 +21,7 @@ startButton.addEventListener("click", () => {
     else{
         document.head.innerHTML = "<meta charset='UTF-8'>"+
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"+
-        "<title>Do You Love Me?</title>"+
+        "<title>Will you go out with me?</title>"+
         "<link rel='stylesheet' href='styles.css'/>"
 
         document.body.innerHTML = "<div class='wrapper'><h2 class='question'>Hello "+input+ "! Will you go out with me?</h2>"+
@@ -52,11 +52,11 @@ function noButtonListener(){
     }
     else if (count >= 5 && count < 10){
         gifMain.src ="https://media.giphy.com/media/QuCslOrnS649PSCnn7/giphy.gif";
-        questionMain.innerHTML = "Stop playing with me! Do you love me or not?!";
+        questionMain.innerHTML = "Stop playing with me! Do you go out with me or not?!";
     }
     else{
         gifMain.src ="https://media.giphy.com/media/8OPf6xrtXi3QEcu5h9/giphy.gif";
-        questionMain.innerHTML = "JUST ANSWER IT! DO YOU LOVE ME?!";
+        questionMain.innerHTML = "JUST ANSWER IT! YES or NO?!";
     }
     const noButtonRect = noButton.getBoundingClientRect();
     const maxX = window.innerWidth - noButtonRect.width;
