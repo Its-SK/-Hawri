@@ -66,6 +66,7 @@ function noButtonListener() {
 
     noButton.style.left = randomX + "px";
     noButton.style.top = randomY + "px";
-    count = count + 1;
+    count++;
 }
+
 
