@@ -45,19 +45,18 @@ function yesButtonListener(){
     gifMain.src = "https://media.giphy.com/media/fHGl1MDMNkO6fOaFDF/giphy.gif";
 }
 
-function noButtonListener(){
+function noButtonListener() {
     if (count < 5) {
-        gifMain.src ="https://media.giphy.com/media/hbOgjMOUfLdWV2Ty1j/giphy.gif";
-        questionMain.innerHTML = "You don't love me?";
-    }
-    else if (count >= 5 && count < 10){
-        gifMain.src ="https://media.giphy.com/media/QuCslOrnS649PSCnn7/giphy.gif";
+        gifMain.src = "https://media.giphy.com/media/hbOgjMOUfLdWV2Ty1j/giphy.gif";
+        questionMain.innerHTML = "You don't want to go out with me?";
+    } else if (count >= 5 && count < 10) {
+        gifMain.src = "https://media.giphy.com/media/QuCslOrnS649PSCnn7/giphy.gif";
         questionMain.innerHTML = "Stop playing with me! Do you go out with me or not?!";
-    }
-    else{
-        gifMain.src ="https://media.giphy.com/media/8OPf6xrtXi3QEcu5h9/giphy.gif";
+    } else {
+        gifMain.src = "https://media.giphy.com/media/8OPf6xrtXi3QEcu5h9/giphy.gif";
         questionMain.innerHTML = "JUST ANSWER IT! YES or NO?!";
     }
+
     const noButtonRect = noButton.getBoundingClientRect();
     const maxX = window.innerWidth - noButtonRect.width;
     const maxY = window.innerHeight - noButtonRect.height;
@@ -67,5 +66,6 @@ function noButtonListener(){
 
     noButton.style.left = randomX + "px";
     noButton.style.top = randomY + "px";
-    count = count+1;
+    count = count + 1;
 }
+
